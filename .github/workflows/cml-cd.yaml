@@ -1,6 +1,7 @@
 name: CML Continuous Deployment
 
 on:
+
   pull_request:
   workflow_dispatch:
 
@@ -9,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # ✅ Checkout Code
+    # ✅ Checkout  Code
     - name: Checkout Repository
       uses: actions/checkout@v4
 

@@ -15,7 +15,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1753356054,,"wq"
+
 :.!
 |2,0,1753268665,,".!"
 :!wq
@@ -25,7 +25,7 @@ $
 
 # Search String History (newest to oldest):
 ? @$
-|2,1,1753355999,,"@$"
+
 
 # Expression History (newest to oldest):
 
@@ -36,42 +36,12 @@ $
 # Registers:
 
 # File marks:
-'0  1  19  ~/.github/workflows/cml-cd.yaml
-|4,48,1,19,1753356054,"~/.github/workflows/cml-cd.yaml"
-'1  5  19  ~/.github/workflows/cml-cd.yaml
-|4,49,5,19,1753355749,"~/.github/workflows/cml-cd.yaml"
-'2  5  19  ~/.github/workflows/cml-cd.yaml
-|4,50,5,19,1753355749,"~/.github/workflows/cml-cd.yaml"
-'3  77  0  ~/.github/workflows/cml-cd.yaml
-|4,51,77,0,1753343059,"~/.github/workflows/cml-cd.yaml"
-'4  78  0  ~/.github/workflows/cml-cd.yaml
-|4,52,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
-'5  77  0  ~/.github/workflows/cml-cd.yaml
-|4,53,77,0,1753343059,"~/.github/workflows/cml-cd.yaml"
+
 '6  78  0  ~/.github/workflows/cml-cd.yaml
 |4,54,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
 '7  1  0  ~/.github/workflows/test.yml
 |4,55,1,0,1753342971,"~/.github/workflows/test.yml"
-'8  64  138  ~/.github/workflows/cml-cd.yaml
-|4,56,64,138,1753342704,"~/.github/workflows/cml-cd.yaml"
-'9  1  1895  ~/.github/workflows/cml-cd.yaml
-|4,57,1,1895,1753342704,"~/.github/workflows/cml-cd.yaml"
 
-# Jumplist (newest first):
--'  1  19  ~/.github/workflows/cml-cd.yaml
-|4,39,1,19,1753356054,"~/.github/workflows/cml-cd.yaml"
--'  5  19  ~/.github/workflows/cml-cd.yaml
-|4,39,5,19,1753355749,"~/.github/workflows/cml-cd.yaml"
--'  5  19  ~/.github/workflows/cml-cd.yaml
-|4,39,5,19,1753355749,"~/.github/workflows/cml-cd.yaml"
--'  77  0  ~/.github/workflows/cml-cd.yaml
-|4,39,77,0,1753343059,"~/.github/workflows/cml-cd.yaml"
--'  78  0  ~/.github/workflows/cml-cd.yaml
-|4,39,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
--'  77  0  ~/.github/workflows/cml-cd.yaml
-|4,39,77,0,1753343059,"~/.github/workflows/cml-cd.yaml"
--'  78  0  ~/.github/workflows/cml-cd.yaml
-|4,39,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
 -'  1  0  ~/.github/workflows/test.yml
 |4,39,1,0,1753342971,"~/.github/workflows/test.yml"
 -'  1  0  ~/.github/workflows/test.yml
@@ -96,6 +66,14 @@ $
 |4,39,1,1895,1753342704,"~/.github/workflows/cml-cd.yaml"
 -'  64  138  ~/.github/workflows/cml-cd.yaml
 |4,39,64,138,1753342704,"~/.github/workflows/cml-cd.yaml"
+-'  1  1895  ~/.github/workflows/cml-cd.yaml
+|4,39,1,1895,1753342704,"~/.github/workflows/cml-cd.yaml"
+-'  65  138  ~/.github/workflows/cml-cd.yaml
+|4,39,65,138,1753342704,"~/.github/workflows/cml-cd.yaml"
+-'  1  1895  ~/.github/workflows/cml-cd.yaml
+|4,39,1,1895,1753342704,"~/.github/workflows/cml-cd.yaml"
+-'  65  138  ~/.github/workflows/cml-cd.yaml
+|4,39,65,138,1753342704,"~/.github/workflows/cml-cd.yaml"
 -'  1  1895  ~/.github/workflows/cml-cd.yaml
 |4,39,1,1895,1753342704,"~/.github/workflows/cml-cd.yaml"
 -'  65  138  ~/.github/workflows/cml-cd.yaml
@@ -260,10 +238,7 @@ $
 # History of marks within files (newest to oldest):
 
 > ~/.github/workflows/cml-cd.yaml
-	*	1753356051	0
-	"	1	19
-	^	5	20
-	.	5	19
+
 	+	1	1148
 	+	1	1093
 	+	1	585
@@ -309,8 +284,7 @@ $
 	+	1	2179
 	+	1	1895
 	+	1	2317
-	+	76	49
-	+	5	19
+
 
 > ~/.github/workflows/test.yml
 	*	1753342966	0
