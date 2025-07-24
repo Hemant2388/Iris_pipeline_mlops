@@ -1,0 +1,109 @@
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+.mypy_cache/
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Virtual Environments
+.env/
+.venv/
+venv/
+ENV/
+env.bak/
+env/
+
+# ===============================
+# Git
+# ===============================
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.orig
+
+# ===============================
+# Docker
+# ===============================
+Dockerfile~
+.dockerignore
+docker-compose.override.yml
+**/.docker/
+
+# ===============================
+# Configs & Secrets
+# ===============================
+*.env
+.env.*
+.envrc
+config.yaml
+config.yml
+secrets.yaml
+secrets.yml
+*.secret
+*.key
+*.pem
+*.crt
+
+# GCP SDK
+.gcloud/
+.cloudshell/
+
+# ===============================
+# MLflow
+# ===============================
+mlruns/
+mlartifacts/
+mlflow.db
+
+# ===============================
+# DVC
+# ===============================
+.dvc/config.local
+.dvc/tmp/
+.dvc/cache/
+**/*.dvc
+**/*.dvc.lock
+
+# ===============================
+# Feast
+# ===============================
+registry.db
+**/feature_store.yaml
+feast/*/data/
+
+# ===============================
+# Kubernetes
+# ===============================
+k8s/*.yaml~
+k8s/*.backup.yaml
+
+# ===============================
+# GitHub Actions / CML
+# ===============================
+gha-creds-*.json
+cml-runner-token
+.cml/
+cml-output/
+*.report.md
+
+# ===============================
+# System
+# ===============================
+.DS_Store
+Thumbs.db
+desktop.ini
+

@@ -1,0 +1,78 @@
+name: CML Continuous Deployment
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # ✅ Checkout Code
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    # ✅ Authenticate to Google Cloud using service account
+    - name: Authenticate to Google Cloud
+      uses: google-github-actions/auth@v2
+      with:
+        credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+    # ✅ Set up Google Cloud SDK
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v2
+      with:
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+
+    # ✅ Manually configure Docker for Artifact Registry auth
+    - name: Configure Docker for Artifact Registry
+      run: |
+        mkdir -p ~/.docker
+        cat > ~/.docker/config.json <<EOF
+        {
+          "credHelpers": {
+            "us-central1-docker.pkg.dev": "gcloud"
+          }
+        }
+        EOF
+
+    # ✅ Build and Tag Docker Image
+    - name: Build and Tag Docker Image
+      run: |
+        docker build -t iris-api Docker/
+        docker tag iris-api us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/my-repo/iris-api:latest
+
+    # ✅ Confirm Auth Identity
+    - name: Confirm Auth Identity (Pre-Push)
+      run: |
+        gcloud auth list
+        gcloud config list
+        gcloud artifacts repositories list --location=us-central1
+
+    # ✅ Push Docker Image to Artifact Registry
+    - name: Push Docker Image
+      run: |
+        docker push us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/my-repo/iris-api:latest
+
+    # ✅ Connect to GKE Cluster
+    - name: Connect to GKE Cluster
+      run: |
+        gcloud container clusters get-credentials demo-iris-cluster --region us-central1 --project ${{ secrets.GCP_PROJECT_ID }}
+
+    # ✅ Install gke-gcloud-auth-plugin (Fixed Path)
+    - name: Install gke-gcloud-auth-plugin
+      run: |
+        echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+        sudo apt-get install -y apt-transport-https ca-certificates gnupg
+        curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | \
+        sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
+        sudo apt-get update
+        sudo apt-get install -y google-cloud-sdk-gke-gcloud-auth-plugin
+
+    # ✅ Deploy to Kubernetes
+    - name: Deploy to Kubernetes
+      run: |
+        kubectl apply -f k8s/iris-deployment.yaml
+
