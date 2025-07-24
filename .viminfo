@@ -15,9 +15,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1753355472,,"wq"
-:Wq
-|2,0,1753355309,,"Wq"
+
 :.!
 |2,0,1753268665,,".!"
 :!wq
@@ -27,7 +25,7 @@ $
 
 # Search String History (newest to oldest):
 ? @$
-|2,1,1753355439,,"@$"
+
 
 # Expression History (newest to oldest):
 
@@ -38,40 +36,12 @@ $
 # Registers:
 
 # File marks:
-'0  5  20  ~/.github/workflows/cml-cd.yaml
-|4,48,5,20,1753355472,"~/.github/workflows/cml-cd.yaml"
-'1  13  18  ~/.github/workflows/cml-cd.yaml
-|4,49,13,18,1753355314,"~/.github/workflows/cml-cd.yaml"
-'2  13  18  ~/.github/workflows/cml-cd.yaml
-|4,50,13,18,1753355314,"~/.github/workflows/cml-cd.yaml"
-'3  78  0  ~/.github/workflows/cml-cd.yaml
-|4,51,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
-'4  78  0  ~/.github/workflows/cml-cd.yaml
-|4,52,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
-'5  78  0  ~/.github/workflows/cml-cd.yaml
-|4,53,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
+
 '6  78  0  ~/.github/workflows/cml-cd.yaml
 |4,54,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
 '7  1  0  ~/.github/workflows/test.yml
 |4,55,1,0,1753342971,"~/.github/workflows/test.yml"
-'8  1  1895  ~/.github/workflows/cml-cd.yaml
-|4,56,1,1895,1753342704,"~/.github/workflows/cml-cd.yaml"
-'9  65  138  ~/.github/workflows/cml-cd.yaml
-|4,57,65,138,1753342704,"~/.github/workflows/cml-cd.yaml"
 
-# Jumplist (newest first):
--'  5  20  ~/.github/workflows/cml-cd.yaml
-|4,39,5,20,1753355472,"~/.github/workflows/cml-cd.yaml"
--'  13  18  ~/.github/workflows/cml-cd.yaml
-|4,39,13,18,1753355314,"~/.github/workflows/cml-cd.yaml"
--'  13  18  ~/.github/workflows/cml-cd.yaml
-|4,39,13,18,1753355314,"~/.github/workflows/cml-cd.yaml"
--'  78  0  ~/.github/workflows/cml-cd.yaml
-|4,39,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
--'  78  0  ~/.github/workflows/cml-cd.yaml
-|4,39,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
--'  78  0  ~/.github/workflows/cml-cd.yaml
-|4,39,78,0,1753343059,"~/.github/workflows/cml-cd.yaml"
 -'  1  0  ~/.github/workflows/test.yml
 |4,39,1,0,1753342971,"~/.github/workflows/test.yml"
 -'  1  0  ~/.github/workflows/test.yml
@@ -88,6 +58,14 @@ $
 |4,39,1,0,1753342971,"~/.github/workflows/test.yml"
 -'  1  0  ~/.github/workflows/test.yml
 |4,39,1,0,1753342971,"~/.github/workflows/test.yml"
+-'  64  138  ~/.github/workflows/cml-cd.yaml
+|4,39,64,138,1753342704,"~/.github/workflows/cml-cd.yaml"
+-'  65  138  ~/.github/workflows/cml-cd.yaml
+|4,39,65,138,1753342704,"~/.github/workflows/cml-cd.yaml"
+-'  1  1895  ~/.github/workflows/cml-cd.yaml
+|4,39,1,1895,1753342704,"~/.github/workflows/cml-cd.yaml"
+-'  64  138  ~/.github/workflows/cml-cd.yaml
+|4,39,64,138,1753342704,"~/.github/workflows/cml-cd.yaml"
 -'  1  1895  ~/.github/workflows/cml-cd.yaml
 |4,39,1,1895,1753342704,"~/.github/workflows/cml-cd.yaml"
 -'  65  138  ~/.github/workflows/cml-cd.yaml
@@ -238,8 +216,6 @@ $
 |4,39,1,0,1753342161,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1753342161,"~/.gitignore"
--'  33  0  k8s/iris-api.yaml
-|4,39,33,0,1753286684,"k8s/iris-api.yaml"
 -'  33  0  k8s/iris-api.yaml
 |4,39,33,0,1753286684,"k8s/iris-api.yaml"
 -'  33  0  k8s/iris-api.yaml
@@ -262,10 +238,7 @@ $
 # History of marks within files (newest to oldest):
 
 > ~/.github/workflows/cml-cd.yaml
-	*	1753355470	0
-	"	5	20
-	^	5	21
-	.	5	20
+
 	+	1	1148
 	+	1	1093
 	+	1	585
@@ -311,9 +284,7 @@ $
 	+	1	2179
 	+	1	1895
 	+	1	2317
-	+	77	49
-	+	13	18
-	+	5	20
+
 
 > ~/.github/workflows/test.yml
 	*	1753342966	0
