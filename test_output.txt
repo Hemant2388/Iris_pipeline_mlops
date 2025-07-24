@@ -1,0 +1,12 @@
+
+📁 Data Validation
+✅ Total rows: 150
+✅ Columns present: sepal_length, sepal_width, petal_length, petal_width, species
+✅ Null values present: False
+✅ Unique species count: 3
+
+📊 Model Evaluation
+✅ Accuracy: 0.93
+
+🧠 Model Prediction
+✅ Predicted species: setosa
